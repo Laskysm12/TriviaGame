@@ -6,30 +6,45 @@
     <title>Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="main.js"></script>
 </head>
 <body>
     
-    <form>
-        <p>Please select your preferred contact method:</p>
-        <div>
-          <input type="radio" id="contactChoice1"
-           name="contact" value="email">
-          <label for="contactChoice1">Email</label>
+  <div id="wrapper">
+
+    <div id="display">00:00</div>
+
+    <form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
+
+      <div class="question">1.	As a protest to Hollywood’s portrayal of Native Americans in film, Marlon Brando decline an Academy Award for his performance in what movie?</div>
+      <input id="answer" type="radio" name="group1" value="wrong"> Apocalyse Now<br>
+      <input id="answer" type="radio" name="group1" value="wrong"> Last Tango in Paris<br>
+      <input id="answer" type="radio" name="group1" value="correct"> The Godfather<br>
+      <input id="answer" type="radio" name="group1" value="wrong"> On The Waterfront<hr>
       
-          <input type="radio" id="contactChoice2"
-           name="contact" value="phone">
-          <label for="contactChoice2">Phone</label>
+      <div class="question">2.	The actress Gal Gadot, who starred in the 2017 blockbuster hit “Wonder Woman,” was born in what country?</div>
+      <input id="answer" type="radio" name="group2" value="wrong"> Argentina<br>
+      <input id="answer" type="radio" name="group2" value="correct"> Israel<br>
+      <input id="answer" type="radio" name="group2" value="wrong"> The Czech Republic<br>
+      <input id="answer" type="radio" name="group2" value="wrong"> Germany<hr>
       
-          <input type="radio" id="contactChoice3"
-           name="contact" value="mail">
-          <label for="contactChoice3">Mail</label>
-        </div>
-        <div>
-          <button type="submit">Submit</button>
-        </div>
+      <div class="question">3.	Keegan-Michael Key and Jordan Peele, stars of the critically acclaimed sketch comedy TV series Key and Peele, got their start in acting together in what comedy show?</div>
+      <input id="answer" type="radio" name="group3" value="wrong"> In Living Color<br>
+      <input id="answer" type="radio" name="group3" value="wrong"> Saturday Night Live<br>
+      <input id="answer" type="radio" name="group3" value="wrong"> The Second City<br>
+      <input id="answer" type="radio" name="group3" value="correct" > Mad TV<hr>
+      
+      <div class="question">4.	Tyler Durden is a fictional character appearing as the central protagonist and antagonist in what 1999 American film?</div>
+      <input id="answer" type="radio" name="group4" value="correct"> Fight Club<br>
+      <input id="answer" type="radio" name="group4" value="wrong"> End of Days<br>
+      <input id="answer" type="radio" name="group4" value="wrong"> The Insider<br>
+      <input id="answer" type="radio" name="group4" value="wrong" > Double Jeopardy<hr>
+
+      <button class="submit" onclick="return handleClick();" type="submit">Submit</button>
+      
       </form>
 
+    </div>
+   
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
