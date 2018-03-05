@@ -1,4 +1,6 @@
 
+
+
 window.onload = function() {
 
   // maybe have to put everything in this?
@@ -6,11 +8,14 @@ window.onload = function() {
 var intervalId;
 
 // He had it set to false
-var clockRunning = true;
+var clockRunning = false;
 
 var stopwatch = {
 
   time: 60,
+
+intervalId = setInterval(stopwatch.count, 1000),
+clockRunning = true,
 
 count: function() {
 
